@@ -103,6 +103,23 @@ namespace Primordial
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            // Распаковываем эмулятор GC только при выборе Neverlose
+            if (CheatConfig.SelectedCheat == "neverlose")
+            {
+                bool isInstalled = CsgoInstaller.InstallFilesForNeverlose();
+
+                if (!isInstalled)
+                {
+                    MessageBox.Show(
+                        "Папка CS:GO / csgo legacy не найдена на диске C: или в Steam!",
+                        "Ошибка Neverlose",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                    return;
+                }
+            }
+
             Form3 form = new Form3();
             form.Show();
             this.Hide();

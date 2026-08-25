@@ -61,6 +61,63 @@ namespace Primordial.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на // all of these should be quite self-explanatory
+        ///&quot;ranks&quot;
+        ///{
+        ///	&quot;competitive_rank&quot;	&quot;18&quot;
+        ///	&quot;competitive_wins&quot;	&quot;666&quot;
+        ///	&quot;wingman_rank&quot;	&quot;18&quot;
+        ///	&quot;wingman_wins&quot;	&quot;777&quot;
+        ///	&quot;dangerzone_rank&quot;	&quot;15&quot;
+        ///	&quot;dangerzone_wins&quot;	&quot;888&quot;
+        ///}
+        ///
+        ///&quot;vac_banned&quot;	&quot;0&quot;
+        ///&quot;cmd_friendly&quot;	&quot;666&quot;
+        ///&quot;cmd_teaching&quot;	&quot;777&quot;
+        ///&quot;cmd_leader&quot;	&quot;888&quot;
+        ///&quot;player_level&quot;	&quot;39&quot;
+        ///&quot;player_cur_xp&quot;	&quot;4999&quot;
+        ///
+        ///// these are the same weights valve uses
+        ///&quot;rarity_weights&quot;
+        ///{
+        ///	&quot;1&quot;	&quot;10000000&quot;
+        ///	&quot;2&quot;	&quot;2000000&quot;
+        ///	&quot;3&quot;	&quot;400000&quot;
+        ///	&quot;4&quot;	&quot;80000&quot;
+        ///	&quot;5&quot;	&quot;16000&quot;
+        ///	&quot;6&quot;	&quot;3200&quot;
+        ///	&quot;99&quot;	&quot;1280&quot;
+        ///} [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string config {
+            get {
+                return ResourceManager.GetString("config", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] csgo {
+            get {
+                object obj = ResourceManager.GetObject("csgo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] csgo_gc {
+            get {
+                object obj = ResourceManager.GetObject("csgo_gc", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
         internal static byte[] injector {
@@ -71,12 +128,99 @@ namespace Primordial.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на &quot;items&quot;
+        ///{
+        ///	&quot;1&quot;
+        ///	{
+        ///		&quot;inventory&quot;		&quot;1&quot;
+        ///		&quot;def_index&quot;		&quot;500&quot;
+        ///		&quot;level&quot;		&quot;1&quot;
+        ///		&quot;quality&quot;		&quot;3&quot;
+        ///		&quot;flags&quot;		&quot;0&quot;
+        ///		&quot;origin&quot;		&quot;8&quot;
+        ///		&quot;in_use&quot;		&quot;0&quot;
+        ///		&quot;rarity&quot;		&quot;6&quot;
+        ///		&quot;attributes&quot;
+        ///		{
+        ///			&quot;6&quot;		&quot;0.000000&quot;
+        ///			&quot;7&quot;		&quot;0.000000&quot;
+        ///			&quot;8&quot;		&quot;0.100000&quot;
+        ///		}
+        ///	}
+        ///	&quot;2&quot;
+        ///	{
+        ///		&quot;inventory&quot;		&quot;2&quot;
+        ///		&quot;def_index&quot;		&quot;500&quot;
+        ///		&quot;level&quot;		&quot;1&quot;
+        ///		&quot;quality&quot;		&quot;3&quot;
+        ///		&quot;flags&quot;		&quot;0&quot;
+        ///		&quot;origin&quot;		&quot;8&quot;
+        ///		&quot;in_use&quot;		&quot;0&quot;
+        ///		&quot;rarity&quot;		&quot;6&quot;
+        ///		&quot;attributes&quot;
+        ///		{
+        ///			&quot;6&quot;		&quot;5.000000&quot;
+        ///			&quot;7&quot;		&quot;0.000000&quot;
+        ///			&quot;8&quot;		&quot;0.100000&quot;
+        ///		}
+        ///	}
+        ///	&quot;3&quot;
+        ///	{
+        ///		&quot;inventory&quot;		&quot;3&quot;
+        ///		&quot;def_....
+        /// </summary>
+        internal static string inventory {
+            get {
+                return ResourceManager.GetString("inventory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
         internal static byte[] neverlose {
             get {
                 object obj = ResourceManager.GetObject("neverlose", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на // this was dumped in 2022 (only one i had and didn&apos;t want to use cs2&apos;s)
+        ///&quot;store&quot;
+        ///{
+        ///	&quot;featured_item_index&quot;		&quot;1204&quot;
+        ///	&quot;store_home_index&quot;		&quot;0&quot;
+        ///	&quot;store_banner_layout&quot;
+        ///	{
+        ///		&quot;4846&quot;
+        ///		{
+        ///			&quot;custom_format&quot;		&quot;double&quot;
+        ///			&quot;market_link&quot;		&quot;1&quot;
+        ///		}
+        ///		&quot;4818&quot;
+        ///		{
+        ///			&quot;custom_format&quot;		&quot;double&quot;
+        ///			&quot;market_link&quot;		&quot;1&quot;
+        ///		}
+        ///		&quot;4790&quot;
+        ///		{
+        ///			&quot;custom_format&quot;		&quot;double&quot;
+        ///			&quot;market_link&quot;		&quot;1&quot;
+        ///		}
+        ///		&quot;4747&quot;
+        ///		{
+        ///			&quot;custom_format&quot;		&quot;double&quot;
+        ///			&quot;market_link&quot;		&quot;1&quot;
+        ///		}
+        ///		&quot;4717&quot;
+        ///		{
+        ///			&quot;custom_format&quot;		&quot;double&quot;
+        ///			 [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string price_sheet {
+            get {
+                return ResourceManager.GetString("price_sheet", resourceCulture);
             }
         }
         
@@ -97,6 +241,40 @@ namespace Primordial.Properties {
             get {
                 object obj = ResourceManager.GetObject("server", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] srcds {
+            get {
+                object obj = ResourceManager.GetObject("srcds", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на &quot;unusual_revolving_list&quot;
+        ///{
+        ///	&quot;[aa_fade]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[am_zebra]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[aq_oiled]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[default]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[hy_webs]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[aq_blued]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[hy_forest_boreal]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[aq_forced]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[sp_tape_urban]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[so_night]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[hy_ddpat]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[sp_dapple]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[sp_mesh_tan]weapon_bayonet&quot;		&quot;1&quot;
+        ///	&quot;[aa_fade]weapon_knife_fl [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string unusual_loot_lists {
+            get {
+                return ResourceManager.GetString("unusual_loot_lists", resourceCulture);
             }
         }
     }

@@ -195,6 +195,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsgoInstaller.cs" />
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,10 +253,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="881-_1_.ico" />
+    <Content Include="Properties\config.txt" />
+    <Content Include="Properties\csgo.exe" />
+    <Content Include="Properties\csgo_gc.dll" />
     <Content Include="Properties\injector.exe" />
+    <Content Include="Properties\inventory.txt" />
     <Content Include="Properties\neverlose.dll" />
+    <Content Include="Properties\price_sheet.txt" />
     <Content Include="Properties\primordial_fix.dll" />
     <Content Include="Properties\server.exe" />
+    <Content Include="Properties\srcds.exe" />
+    <Content Include="Properties\unusual_loot_lists.txt" />
     <None Include="Resources\nl.png" />
     <None Include="Resources\primo.png" />
     <None Include="Resources\logo.png" />

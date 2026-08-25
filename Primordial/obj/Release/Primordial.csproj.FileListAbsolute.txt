@@ -1,0 +1,15 @@
+C:\Users\ivan\Documents\Primordial_1\Primordial\bin\Release\Endless.exe.config
+C:\Users\ivan\Documents\Primordial_1\Primordial\bin\Release\Endless.exe
+C:\Users\ivan\Documents\Primordial_1\Primordial\bin\Release\Endless.pdb
+C:\Users\ivan\Documents\Primordial_1\Primordial\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.csproj.AssemblyReference.cache
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.Form3.resources
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.Form2.resources
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.Form1.resources
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.Properties.Resources.resources
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.csproj.GenerateResource.cache
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.csproj.CoreCompileInputs.cache
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.csproj.Fody.CopyLocal.cache
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Primordial.csproj.Up2Date
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Endless.exe
+C:\Users\ivan\Documents\Primordial_1\Primordial\obj\Release\Endless.pdb
